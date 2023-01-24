@@ -1,4 +1,4 @@
-package Seminars.seminar1;
+package Seminar1;
 
 public enum TypeSize {
     BIG,

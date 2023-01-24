@@ -1,4 +1,4 @@
-package Seminars.seminar1;
+package Seminar1;
 // инкапсулаяция - возврат продукта по имени и цене
 import java.util.ArrayList;
 import java.util.List;
