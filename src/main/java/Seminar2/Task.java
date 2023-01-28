@@ -6,7 +6,8 @@ public class Task {
         zoo1.addAnimal(new Cat("Vasay", 1, "gray"))
                 .addAnimal(new Horse("Luck", 2))
                 .addAnimal(new Cat("Lora", 3, "black"))
-                .addAnimal(new Duck("Donald", 4));
+                .addAnimal(new Duck("Donald", 4))
+                .addAnimal(new Fish("Dolphin", 10));
         for(Animal an: zoo1.getAnimals()) {
             System.out.println(an);
             System.out.println(an.say());
@@ -27,6 +28,11 @@ public class Task {
 
         for(Flyable flyer : zoo1.getFlyers()) {
             System.out.printf("Speed of fly : %d ", flyer.speedOfFly());
+        }
+        System.out.println("------------------");
+
+        for(Swimmable swimmer : zoo1.getSwimmer()) {
+            System.out.printf("Speed of swim: %d", swimmer.speedOfSwimming());
         }
     }
 }
