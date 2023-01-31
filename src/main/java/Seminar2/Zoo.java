@@ -58,6 +58,15 @@ public class Zoo {
         }
         return result;
     }
+    public List<Swimmable> getSwimmer() {
+        List<Swimmable> result = new ArrayList<Swimmable>();
+        for(Animal an : animals) {
+            if(an instanceof Swimmable) {
+                result.add((Swimmable) an);
+            }
+        }
+        return result;
+    }
     public ArrayList<Animal> getAnimals() {
         return animals;
     }
