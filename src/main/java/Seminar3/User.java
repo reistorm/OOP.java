@@ -54,5 +54,4 @@ public class User implements Comparable<User> {
         return this.getAge() - other.getAge(); // если 0 значит равны, если (-) меньше, (+) - больше
         // обычно берут в return -1, 0, 1
     }
-
 }
