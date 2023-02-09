@@ -11,15 +11,18 @@ public class Program {
         personal.addUser(new User("Jennifer", "Smith", 35));
         personal.addUser(new User("Jennifer", "Lopez", 50));
         personal.addUser(new User("Jennifer", "Lopez", 20));
-
-        for (User user : personal) {
-            System.out.println(user);
-        }
+//        for (User user : personal) {
+//            System.out.println(user);
+//        }
         System.out.println("--------------------");
         // сортировка
         Collections.sort(personal.getUsers());
-        for (User user : personal) {
-            System.out.println(user);
-        }
+//        for (User user : personal) {
+//            System.out.println(user);
+//        }
+        System.out.println("--------------------");
+        User bigBoss = new User("Bill", "Klinton", 70);
+        bigBoss.addSubordinators(personal);
+        System.out.println(bigBoss);
     }
 }

@@ -13,24 +13,25 @@ public class Personal implements Iterable<User> {
         users.add(user);
     }
 
+    private class UserIterator implements Iterator<User> {
+        private int currentIndex = 0;
+
+        @Override
+        public boolean hasNext() { //определяет есть у него следующий элемент
+            return users.size() > currentIndex;
+
+        }
+
+        @Override
+        public User next() { // получить следующий элемент
+            return users.get(currentIndex++); // возвращает текущее значение, потом увеличиваем значение на 1
+        }
+    }; // ; относится к return
+
     @Override
     public Iterator<User> iterator() {
 
-        return new Iterator<User>() { //анонимный метод
-            // надо переписать
-            private int currentIndex = 0;
-
-            @Override
-            public boolean hasNext() { //определяет есть у него следующий элемент
-                return users.size() > currentIndex;
-
-            }
-
-            @Override
-            public User next() { // получить следующий элемент
-                return users.get(currentIndex++); // возвращает текущее значение, потом увеличиваем значение на 1
-            }
-        }; // ; относится к return
+        return new UserIterator(); //анонимный метод
     }
 
 
