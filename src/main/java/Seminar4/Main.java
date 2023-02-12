@@ -40,6 +40,11 @@ public class Main {
         for(Militia militia : team3) {
             System.out.println(militia);
         }
+
+        Team<Warrior> team4 = new Team<>();
+        team4.addWarriorToTeam(new Swordman("Dan", 100, new Sword(20), new IronShield(70)));
+        team4.addWarriorToTeam(new Archer("Bin", 110, new Bow(18, 14), new WoodenShield(74)));
+        team4.addWarriorToTeam(new Militia("Jan", 140, new Shovel(30)));
     }
 
 }
