@@ -14,6 +14,7 @@ public class Commander extends Warrior{
         group = team;
     }
 
+
     public String toString() {
         String result = "Commander, " + super.toString();
         for(Warrior warrior : group) {
