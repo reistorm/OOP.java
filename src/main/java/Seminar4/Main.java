@@ -45,6 +45,8 @@ public class Main {
         team4.addWarriorToTeam(new Swordman("Dan", 100, new Sword(20), new IronShield(70)));
         team4.addWarriorToTeam(new Archer("Bin", 110, new Bow(18, 14), new WoodenShield(74)));
         team4.addWarriorToTeam(new Militia("Jan", 140, new Shovel(30)));
+
+        System.out.printf("Min protect of team %d\n", team4.minTeamProtect());
     }
 
 }
