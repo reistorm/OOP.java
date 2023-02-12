@@ -1,7 +1,6 @@
 package Seminar4;
 
-import Seminar4.Weapons.Bow;
-import Seminar4.Weapons.WoodenShield;
+import Seminar4.Weapons.*;
 
 public class Archer extends Warrior {
     public Archer(String name, int healthPoint, Bow bow, WoodenShield woodenShield) {
