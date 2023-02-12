@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) { // необходимо инициализировать перед тем, как вводить команду
         Team <Swordman> team1 = new Team<>();
         team1.addWarriorToTeam(new Swordman("Vasya", 250, new Sword(55), new IronShield(70)));
-        team1.addWarriorToTeam(new Swordman("John", 200, new Sword(50), new IronShield(60)));
+        team1.addWarriorToTeam(new Swordman("John", 300, new Sword(50), new IronShield(80)));
 
         for(Swordman swordman : team1) {
             System.out.println(swordman);
@@ -47,6 +47,10 @@ public class Main {
         team4.addWarriorToTeam(new Militia("Jan", 140, new Shovel(30), new BulletproofShield(110)));
 
         System.out.printf("Min protect of team %d\n", team4.minTeamProtect());
+
+        Commander commander1 = new Commander("Nikolay", 200, new Sword(60), new ZeroShield(0), team4);
+
+        System.out.print(commander1);
     }
 
 }
