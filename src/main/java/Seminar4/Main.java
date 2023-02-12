@@ -34,8 +34,8 @@ public class Main {
         System.out.println(team2.maxTeamRange());
 
         Team <Militia> team3 = new Team<>();
-        team3.addWarriorToTeam(new Militia("Kyzma", 138, new Shovel(15)));
-        team3.addWarriorToTeam(new Militia("Fedor", 150, new Shovel(20)));
+        team3.addWarriorToTeam(new Militia("Kyzma", 138, new Shovel(15), new BulletproofShield(100)));
+        team3.addWarriorToTeam(new Militia("Fedor", 150, new Shovel(20), new BulletproofShield(110)));
 
         for(Militia militia : team3) {
             System.out.println(militia);
@@ -44,7 +44,7 @@ public class Main {
         Team<Warrior> team4 = new Team<>();
         team4.addWarriorToTeam(new Swordman("Dan", 100, new Sword(20), new IronShield(70)));
         team4.addWarriorToTeam(new Archer("Bin", 110, new Bow(18, 14), new WoodenShield(74)));
-        team4.addWarriorToTeam(new Militia("Jan", 140, new Shovel(30)));
+        team4.addWarriorToTeam(new Militia("Jan", 140, new Shovel(30), new BulletproofShield(110)));
 
         System.out.printf("Min protect of team %d\n", team4.minTeamProtect());
     }
