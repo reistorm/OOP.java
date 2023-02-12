@@ -15,7 +15,7 @@ import Seminar4.Weapons.*;
 public class Main {
     public static void main(String[] args) { // необходимо инициализировать перед тем, как вводить команду
         Team <Swordman> team1 = new Team<>();
-        team1.addWarriorToTeam(new Swordman("Vasya", 250, new Sword(25), new IronShield(70)));
+        team1.addWarriorToTeam(new Swordman("Vasya", 250, new Sword(55), new IronShield(70)));
         team1.addWarriorToTeam(new Swordman("John", 200, new Sword(50), new IronShield(60)));
 
         for(Swordman swordman : team1) {
