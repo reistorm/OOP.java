@@ -1,6 +1,7 @@
 package Seminar4;
 
 import Seminar4.Weapons.Bow;
+import Seminar4.Weapons.Shovel;
 import Seminar4.Weapons.Sword;
 
 // Реализовать абстрактный класс Warrior, с полями name, weapon, healthPoint
@@ -33,6 +34,14 @@ public class Main {
 
         System.out.println(team1.maxTeamRange());
         System.out.println(team2.maxTeamRange());
+
+        Team <Militia> team3 = new Team<>();
+        team3.addWarriorToTeam(new Militia("Kyzma", 138, new Shovel(15)));
+        team3.addWarriorToTeam(new Militia("Fedor", 150, new Shovel(20)));
+
+        for(Militia militia : team3) {
+            System.out.println(militia);
+        }
     }
 
 }
