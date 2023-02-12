@@ -1,5 +1,7 @@
 package Seminar4;
 
+import Seminar4.Weapons.Shield;
+
 import java.util.*;
 import java.util.List;
 
@@ -24,5 +26,14 @@ public class Team <E extends Warrior> implements Iterable<E>{ // все мето
             }
         }
         return maxRange;
+    }
+
+    public int minTeamProtect() {
+        int minProtect = 0;
+        for(E item : team) {
+            if(item instanceof Shield) {
+                if(((Shield) item).shotProtect() < minProtect) minProtect = ((Shield) item).shotProtect();
+            }
+        }
     }
 }

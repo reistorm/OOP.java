@@ -1,8 +1,6 @@
 package Seminar4;
 
-import Seminar4.Weapons.Bow;
-import Seminar4.Weapons.Shovel;
-import Seminar4.Weapons.Sword;
+import Seminar4.Weapons.*;
 
 // Реализовать абстрактный класс Warrior, с полями name, weapon, healthPoint
 //Создать интерфейс Weapon с методом damage(), который будет
@@ -17,16 +15,16 @@ import Seminar4.Weapons.Sword;
 public class Main {
     public static void main(String[] args) { // необходимо инициализировать перед тем, как вводить команду
         Team <Swordman> team1 = new Team<>();
-        team1.addWarriorToTeam(new Swordman("Vasya", 250, new Sword(25)));
-        team1.addWarriorToTeam(new Swordman("John", 200, new Sword(50)));
+        team1.addWarriorToTeam(new Swordman("Vasya", 250, new Sword(25), new IronShield(70)));
+        team1.addWarriorToTeam(new Swordman("John", 200, new Sword(50), new IronShield(60)));
 
         for(Swordman swordman : team1) {
             System.out.println(swordman);
         }
 
         Team<Archer> team2 = new Team<>();
-        team2.addWarriorToTeam(new Archer("Kolya", 150, new Bow(100, 50)));
-        team2.addWarriorToTeam(new Archer("Paul", 200, new Bow(75,570)));
+        team2.addWarriorToTeam(new Archer("Kolya", 150, new Bow(15, 10), new WoodenShield(20)));
+        team2.addWarriorToTeam(new Archer("Paul", 200, new Bow(75, 15), new WoodenShield(500)));
 
         for(Archer person : team2) {
             System.out.println(person);

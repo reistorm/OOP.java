@@ -1,10 +1,11 @@
 package Seminar4;
 
 import Seminar4.Weapons.Bow;
+import Seminar4.Weapons.WoodenShield;
 
 public class Archer extends Warrior {
-    public Archer(String name, int healthPoint, Bow bow) {
-        super(name, healthPoint, bow);
+    public Archer(String name, int healthPoint, Bow bow, WoodenShield woodenShield) {
+        super(name, healthPoint, bow, woodenShield);
     }
 
     public String toString() {
