@@ -6,9 +6,9 @@ public interface Repository {
     List<User> getAllUsers();
     String CreateUser(User user);
     void UpdateUser(User user, Fields field, String param);
-
-    void saveOld();
     void deleteUser(List users);
+    void saveOld();
+
     void saveJson();
 
 }
