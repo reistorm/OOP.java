@@ -1,20 +1,7 @@
-public class User{
-	private String name;
-	
+package Seminar6.HomeWork;
+
+public class User extends Persister{
 	public User(String name){
-		this.name = name;
-	}
-	
-	public String getName(){
-		return name;
-	}
-	
-	public void save(){
-		Persister persister = new Persister(this);
-		persister.save();
-	}
-	
-	public void report(){
-		System.out.println("Report for user: " + name);
+		super(name);
 	}
 }

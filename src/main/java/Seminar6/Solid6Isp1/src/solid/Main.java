@@ -1,7 +1,8 @@
 package Seminar6.Solid6Isp1.src.solid;
 
+import Seminar6.Solid6Isp1.src.solid.isp.InternetPaymentService;
 import Seminar6.Solid6Isp1.src.solid.isp.TerminalPaymentService;
-import solid.isp.InternetPaymentService;
+
 
 
 public class Main {
@@ -14,6 +15,5 @@ public class Main {
         TerminalPaymentService terminalService = new TerminalPaymentService();
         terminalService.payWebMoney(10);
         terminalService.payCreditCard(10);
-        terminalService.payPhoneNumber(10);
     }
 }

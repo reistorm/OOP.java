@@ -1,11 +1,19 @@
-public class Persister{
-	private User user;
-	
-	public Persister(User user){
-		this.user = user;
+package Seminar6.HomeWork;
+
+public abstract class Persister {
+	private String name;
+	public Persister(String name) {
+		this.name = name;
 	}
-	
-	public void save(){
-		System.out.println("Save user: " + user.getName());
+
+	public String getName() {
+		return name;
+	}
+
+	@Override
+	public String toString() {
+		return "Persister{" +
+				"name='" + name + '\'' +
+				'}';
 	}
 }
