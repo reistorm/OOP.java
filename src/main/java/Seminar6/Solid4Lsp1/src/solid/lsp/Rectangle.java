@@ -1,6 +1,6 @@
-package solid.lsp;
+package Seminar6.Solid4Lsp1.src.solid.lsp;
 
-public class Rectangle {
+public class Rectangle extends Shape{
     private int sideA;
     private int sideB;
 

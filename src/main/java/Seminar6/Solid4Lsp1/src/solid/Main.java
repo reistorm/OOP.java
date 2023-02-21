@@ -1,15 +1,15 @@
 package Seminar6.Solid4Lsp1.src.solid;
 
-import solid.lsp.Rectangle;
-import solid.lsp.Square;
+import Seminar6.Solid4Lsp1.src.solid.lsp.Rectangle;
+import Seminar6.Solid4Lsp1.src.solid.lsp.Shape;
+import Seminar6.Solid4Lsp1.src.solid.lsp.Square;
 
 public class Main {
     public static void main(String[] args) {
-        Rectangle rectangle = new Square(5);
-        rectangle.setSideA(4);
-        rectangle.setSideB(5);
-        System.out.printf("В прямоугольнике сторона A = %d, сторона B = %d\n", rectangle.getSideA(), rectangle.getSideB());
-        solid.ViewShape view = new solid.ViewShape(rectangle);
+        Square square = new Square(5);
+        square.setSide(4);
+        System.out.printf("В прямоугольнике сторона A = %d, сторона B = %d\n", square.getSide(), square.getSide());
+        ViewShape view = new ViewShape(square);
         view.showArea();
     }
 }
