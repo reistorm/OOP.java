@@ -1,5 +1,5 @@
 package Seminar6.HomeWork;
-
+// Persister - сохранятель
 public abstract class Persister {
 	private String name;
 	public Persister(String name) {
