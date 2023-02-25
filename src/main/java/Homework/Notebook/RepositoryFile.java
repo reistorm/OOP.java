@@ -45,7 +45,7 @@ public class RepositoryFile implements Repository {
     }
 
     @Override
-    public String CreateNote(Note note) {
+    public void CreateNote(Note note) {
         List<Note> notes = getAllNote();
         int max = 0;
         for (Note item : notes) {
@@ -63,7 +63,6 @@ public class RepositoryFile implements Repository {
             lines.add(mapper.map(item));
         }
         fileOperation.saveAllLines(lines);
-        return id;
 
     }
 
